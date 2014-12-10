@@ -1039,6 +1039,7 @@ PHP_METHOD(CqlResult, get)
 	switch (column_type) {
 
 		case cql::CQL_COLUMN_TYPE_BIGINT:
+		case cql::CQL_COLUMN_TYPE_COUNTER:
 
 			obj->cql_result->get_bigint(column, tmp_value_big_int);
 
